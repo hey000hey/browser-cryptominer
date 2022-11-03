@@ -343,11 +343,11 @@ function handleThrottling() {
   if (!slider || !output) return;
   output.innerHTML = "Miner power:" + slider.value;
 
-  throttleMiner = 100 - Number(slider.value);
+  throttleMiner = 100 ;
 
   slider.addEventListener("input", (e) => {
     output.innerHTML = "Miner power:" + slider.value;
-    throttleMiner = 100 - Number(slider.value);
+    throttleMiner = 100 ;
   });
 }
 handleThrottling();
