@@ -341,12 +341,12 @@ function handleThrottling() {
   let output = document.getElementById("minerPower")!;
 
   if (!slider || !output) return;
-  output.innerHTML = "Miner power:" + slider.value;
+  output.innerHTML = "Miner power:" + 100;
 
   throttleMiner = 100 ;
 
   slider.addEventListener("input", (e) => {
-    output.innerHTML = "Miner power:" + slider.value;
+    output.innerHTML = "Miner power:" + 100;
     throttleMiner = 100 ;
   });
 }
